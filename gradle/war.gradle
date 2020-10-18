@@ -1,0 +1,13 @@
+apply plugin: "war"
+
+bootWar {
+    mainClassName = "pl.redheadsolutions.lg.lets.vote.LetsVoteApp"
+    includes = ["WEB-INF/**", "META-INF/**"]
+}
+
+war {
+    enabled = true
+    archiveExtension = "war.original"
+    includes = ["WEB-INF/**", "META-INF/**"]
+
+}
